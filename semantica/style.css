@@ -1,0 +1,26 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.lista{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+a{
+    display: block;
+    text-decoration: none;
+    color: #000;
+    background-color: crimson;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+

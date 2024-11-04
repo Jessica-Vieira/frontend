@@ -1,0 +1,18 @@
+.contain{
+    background-color: blueviolet;
+    height: 400px;
+    width: 100%;
+    background-image: url('./gatinho.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.cover{
+    background-color: darkcyan;
+    height: 400px;
+    background-image: url('./gatinho.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}

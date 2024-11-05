@@ -1,0 +1,17 @@
+div{
+    border: 2px solid lightskyblue;
+    margin-top: 40px;
+    padding: 20px 20px 40px 20px;
+    position: relative;
+}
+
+span{
+    background-color: palevioletred;
+    border: 2px solid black;
+    padding: 10px;
+    position: absolute;/*vai se posicionar em relacao ao elemento pai relative*/
+    top: -20px; /*é interessante optar ou pot top ou por bottom e nao os dois pois nao funciona corretamente*/
+    /*esse tipo de atribuicao so funciona em positions distintas da padrao*/ 
+}
+
+/*z-index funciona quando tem algum position definido distinto do padrao. por padrao o elemento com position vai ter prioridade de profundidade em relacao aos outros itens sendo -1 pra ficar por baixo de tds e 1 para ficar acima de tds a menos que tenha outro com index maior*/

@@ -1,0 +1,27 @@
+section{
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+p{
+    font-weight: 1.5rem;
+    max-width: 50ch;
+    align-self: center;
+}
+
+div{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /*quando cada um chegar a 300px so vai caber 1 coluna*/
+}
+
+.galeria{
+    margin-top: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}

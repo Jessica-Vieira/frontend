@@ -1,0 +1,50 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 40px;
+}
+
+h1,p{
+    margin: 0;
+}
+
+h1{
+    font-size: 48px;
+    line-height: 1;
+}
+
+.grid{
+    display: grid;/*quando é definido um container grid o callapsing margin padrao do css nao ocorre mais pois cada elemento grid tem sua propria celula*/
+    gap: 10px;/*distancia entre elementos*/
+    grid-template-columns: repeat(2,1fr);/*mesma coisa de 1fr 1fr mas é como se estivesse multiplicando para ter quantidade desejada*/
+}
+
+.titulo{
+    grid-column: 1/-1;/*-1 significa ate a ultima posicao*/
+    text-align: center;/*alinhamento de elemento é diferente de alinhamento de texto, entao para alinhar texto tem que ser com text align*/
+}
+
+.imagem{
+    grid-column: 1;
+    grid-row: 2/5;
+    /*tbm seria possivel utilizar o grid area que é a combinacao de coluna+linha*/
+    justify-self: end;
+}
+
+.botao{
+    background-color: darkslateblue;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    width: 100px;
+}
+
+.info{
+    display: grid;
+    grid-row: 2/5;
+    justify-items: start;
+    align-items: center;
+    place-self: center start;
+    gap: 20px;
+    background-color: chocolate;
+    padding: 20px;
+}

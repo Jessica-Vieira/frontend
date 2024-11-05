@@ -1,0 +1,42 @@
+img{
+    max-width: 100%;
+    display: block;
+}
+
+div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+h1{
+    grid-column: 1/-1;
+}
+/*max -> menor que; min -> maior que*/
+@media (max-width: 600px){
+    div{
+        grid-template-columns: 1fr;
+    }
+} 
+
+/*uma ou outra pode ser verdadeira*/ 
+
+@media(min-width:1000px), (max-width: 500px){
+    html{
+        font-size: 150%;
+    }
+}
+
+/*as duas sao verdadeiras e acontecem entre elas*/
+@media (min-width:700px) and (max-width: 900px){
+    h1{
+        background-color: #caf;
+    }
+}
+
+/*@media screen {
+    
+} aplica o estilo e some na impressao
+
+@media print{
+
+}aplica o estilo apenas para impressao*/ 

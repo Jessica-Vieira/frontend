@@ -27,13 +27,13 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 40px;
-    padding:  20px;
 }
 
 .lista-produtos ul li{
     background-color: var(--cor2);
     border-radius: 4px;
-    padding: 1rem;
+    padding: 0.5rem;
+    border: 2px solid var(--cor1);
 }
 
 .lista-produtos ul div{
@@ -45,5 +45,6 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
-    box-shadow: 0 0 4px var(--cor1);
+    position: center;
+    border: 2px solid var(--cor1);
 }

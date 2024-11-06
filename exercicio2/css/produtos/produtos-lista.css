@@ -1,0 +1,49 @@
+.lista-produtos{
+    background-color: var(--cor4);
+    display: grid;
+    justify-content: center;
+    padding-top: 60px;
+    padding-bottom: 120px;
+    position: relative;
+}
+
+.lista-produtos::before{
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 100%;
+    width: 100%;
+    height: 2px;
+    background: var(--cor1);
+}
+
+.lista-produtos h2{
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.lista-produtos ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding:  20px;
+}
+
+.lista-produtos ul li{
+    background-color: var(--cor2);
+    border-radius: 4px;
+    padding: 1rem;
+}
+
+.lista-produtos ul div{
+    width: 200px;
+    height: 200px;
+}
+
+.lista-produtos ul div img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    box-shadow: 0 0 4px var(--cor1);
+}

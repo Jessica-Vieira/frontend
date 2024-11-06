@@ -1,0 +1,39 @@
+.font-1-xxl{
+    font: 600 4rem/1.125 "DynaPuff", "Roboto", sans-serif;
+    text-shadow: 1px 1px 2px var(--cor1);
+}
+
+.font-1-xl{
+    font: 400 2rem/1.5 "Roboto", sans-serif;
+}
+
+.font-2-l{
+    font: 400 1.5rem/1.5 "Roboto", sans-serif;
+}
+
+.font-2-m{
+    font: 400 1.125rem/1.5 "Roboto", sans-serif;
+    text-transform: capitalize;
+}
+
+@media (max-width: 600px){
+    .font-2-m{
+        font-size: 0.875rem;
+    }
+}
+
+@media(max-width: 1200px){
+    .font-1-xxl{
+        font-size: 3rem;
+    }
+
+    .font-2-l{
+        font-size: 1.125rem;
+    }
+}
+
+@media(max-width: 700px){
+    .font-1-xxl{
+        font-size: 2rem;
+    }
+}

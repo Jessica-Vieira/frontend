@@ -1,0 +1,16 @@
+@import "./global/global.css";
+@import "./utilitario/tipografia.css";
+@import "./utilitario/cores.css";
+
+@import "./global/header.css";
+
+/*utilitário*/
+@import "./utilitario/components.css";
+
+/*home*/
+@import "./home/introducao.css";
+
+/*produtos*/
+@import "./produtos/produtos-lista.css"
+
+
